@@ -1,9 +1,11 @@
+import logo from "@/assets/logo.svg";
+
 const Footer = () => {
   return (
     <footer className="py-16 px-6 border-t border-border/50">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
-        <a href="#" className="font-script text-3xl text-foreground hover:text-primary transition-colors">
-          Mohamed Loutfy
+        <a href="#" className="block hover:opacity-80 transition-opacity duration-300">
+          <img src={logo} alt="Mohamed Loutfy Logo" className="h-8 md:h-10" />
         </a>
 
         <div className="flex items-center gap-6">

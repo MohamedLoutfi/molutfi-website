@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import logo from "@/assets/logo.svg";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -20,8 +21,8 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full px-8 md:px-12 py-6 flex items-center justify-center">
-        <a href="#" className="font-script text-3xl md:text-4xl text-foreground hover:text-primary transition-colors duration-300">
-          Mohamed Loutfy
+        <a href="#" className="block hover:opacity-80 transition-opacity duration-300">
+          <img src={logo} alt="Mohamed Loutfy Logo" className="h-6 md:h-8" />
         </a>
       </div>
     </motion.nav>
